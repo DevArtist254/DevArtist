@@ -1,0 +1,29 @@
+.header {
+  width: 97vw;
+  height: 98vh;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #08d9d6 0%, rgba(40, 40, 40, 0) 100%);
+  position: relative;
+  padding-left: 4rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+  }
+
+  &__heading {
+    font-family: $font-fam-sec;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-white;
+  }
+}

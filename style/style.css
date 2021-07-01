@@ -32,3 +32,41 @@ Breakpoints : Screens         : nickname
 
 html {
   font-size: 62.5%; }
+
+body {
+  background-color: #252a34; }
+
+.nav {
+  position: fixed;
+  left: 58px;
+  top: 34px;
+  width: 85vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 20; }
+
+.header {
+  width: 97vw;
+  height: 98vh;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #08d9d6 0%, rgba(40, 40, 40, 0) 100%);
+  position: relative;
+  padding-left: 4rem;
+  padding-bottom: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .header__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%; }
+  .header__heading {
+    font-family: "Zen Dots", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 47px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: #ffffffff; }
