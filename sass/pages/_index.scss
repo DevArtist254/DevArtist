@@ -18,12 +18,13 @@
   }
 
   &__heading {
-    font-family: $font-fam-sec;
+    font-family: $font-fam-pri;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
-    line-height: 55px;
+    font-size: 39px;
+    line-height: 39px;
     letter-spacing: 0.02em;
+    z-index: 5;
     color: $color-white;
   }
 }

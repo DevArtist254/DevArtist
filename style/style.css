@@ -45,6 +45,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   z-index: 20; }
+  .nav__logo {
+    font-family: "secFont", cursive;
+    font-size: 1.8rem;
+    color: aliceblue; }
 
 .header {
   width: 97vw;
@@ -63,10 +67,11 @@ body {
     right: 0;
     height: 100%; }
   .header__heading {
-    font-family: "Zen Dots", cursive;
+    font-family: "priFont", cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 47px;
-    line-height: 55px;
+    font-size: 39px;
+    line-height: 39px;
     letter-spacing: 0.02em;
+    z-index: 5;
     color: #ffffffff; }
