@@ -9,11 +9,14 @@
   z-index: 20;
 
   &__logo {
-    font-family: $font-fam-sec;
-    font-size: 1.8rem;
-    color: aliceblue;
-    // &--dark {
+    font-family: $font-fam-ter;
+    font-size: $font-smaller;
 
-    // }
+    &--dark {
+      color: $color-dark;
+    }
+    &--light {
+      color: $color-white;
+    }
   }
 }

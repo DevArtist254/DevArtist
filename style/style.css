@@ -34,7 +34,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #252a34; }
+  background-color: #171717; }
 
 .nav {
   position: fixed;
@@ -46,9 +46,12 @@ body {
   justify-content: space-between;
   z-index: 20; }
   .nav__logo {
-    font-family: "secFont", cursive;
-    font-size: 1.8rem;
-    color: aliceblue; }
+    font-family: "terFont";
+    font-size: 3.6rem; }
+    .nav__logo--dark {
+      color: #000000; }
+    .nav__logo--light {
+      color: #ffffffff; }
 
 .header {
   width: 97vw;
@@ -74,4 +77,128 @@ body {
     line-height: 39px;
     letter-spacing: 0.02em;
     z-index: 5;
+    color: #ffffffff;
+    width: 74%; }
+  .header__quote {
+    font-family: "secFont", cursive;
+    font-size: 18px;
+    line-height: 23px;
+    top: 90%;
+    right: 0%;
+    position: absolute;
+    width: 8em;
+    border-bottom: 3px solid #5fdde5;
+    text-transform: lowercase;
+    color: #5fdde5;
+    transform: rotate(90deg); }
+
+.work {
+  margin-top: 2.5rem; }
+  .work__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh; }
+  .work__timeline {
+    width: 20%;
+    padding-left: 5.7rem;
     color: #ffffffff; }
+    .work__timeline--no {
+      font-family: "secFont", cursive;
+      font-size: 7.2rem;
+      line-height: 109.3%;
+      letter-spacing: 0.3em; }
+    .work__timeline--intro {
+      font-family: "priFont", cursive;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 109.3%;
+      /* or 15px */
+      letter-spacing: 0.3em;
+      text-transform: uppercase; }
+  .work__image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-image: url("./img/NorwaDeskTop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px 0px 0px 25px; }
+    .work__image--imgMob {
+      position: absolute;
+      width: 333px;
+      height: 514px;
+      z-index: 2;
+      left: -135px;
+      top: 122px;
+      border-radius: 25px; }
+  .work__desc {
+    margin-top: 4.5rem;
+    color: #ffffffff; }
+    .work__desc--header {
+      font-family: "priFont", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 5.4rem;
+      line-height: 67px;
+      text-align: center;
+      letter-spacing: 0.15em; }
+    .work__desc--content {
+      font-family: "priFont", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 180%;
+      text-align: center;
+      width: 36%;
+      margin: 0 auto;
+      margin-top: 2rem; }
+    .work__desc--cards {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 89vw;
+      justify-content: space-between;
+      margin: 0 auto; }
+    .work__desc--card {
+      width: 360px;
+      min-height: 474px; }
+
+.card {
+  position: relative; }
+  .card__heading {
+    font-family: "priFont", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: -107px;
+    z-index: -1;
+    position: absolute;
+    width: inherit; }
+  .card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    background-color: #171717; }
+    .card__content--text {
+      font-family: "priFont", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 32px */
+      text-align: center;
+      width: 75%; }
+    .card__content--icon {
+      width: 30%;
+      height: max-content; }

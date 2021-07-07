@@ -26,5 +26,166 @@
     letter-spacing: 0.02em;
     z-index: 5;
     color: $color-white;
+    width: 74%;
+  }
+  &__quote {
+    font-family: $font-fam-sec;
+    font-size: 18px;
+    line-height: 23px;
+    top: 90%;
+    right: 0%;
+    position: absolute;
+    width: 8em;
+    border-bottom: 3px solid $color-primary-neon;
+
+    text-transform: lowercase;
+
+    color: $color-primary-neon;
+
+    transform: rotate(90deg);
+  }
+}
+
+.work {
+  margin-top: 2.5rem;
+
+  &__intro {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__timeline {
+    width: 20%;
+    padding-left: 5.7rem;
+    color: $color-white;
+
+    &--no {
+      font-family: $font-fam-sec;
+      font-size: $font-big;
+      line-height: 109.3%;
+      letter-spacing: 0.3em;
+    }
+    &--intro {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 109.3%;
+      /* or 15px */
+
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+    }
+  }
+
+  &__image {
+    width: 50%;
+    height: 100%;
+    position: relative;
+    background-image: url("./img/NorwaDeskTop.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px 0px 0px 25px;
+
+    &--imgMob {
+      position: absolute;
+      width: 333px;
+      height: 514px;
+      z-index: 2;
+      left: -135px;
+      top: 122px;
+      border-radius: 25px;
+    }
+  }
+
+  &__desc {
+    margin-top: 4.5rem;
+    color: $color-white;
+
+    &--header {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font-meduim;
+      line-height: 67px;
+      text-align: center;
+      letter-spacing: 0.15em;
+    }
+
+    &--content {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 180%;
+
+      text-align: center;
+      width: 36%;
+      margin: 0 auto;
+      margin-top: 2rem;
+    }
+
+    &--cards {
+      margin-top: 4rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 89vw;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    &--card {
+      width: 360px;
+      min-height: 474px;
+    }
+  }
+}
+
+.card {
+  position: relative;
+  &__heading {
+    font-family: $font-fam-pri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 83px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    margin-bottom: -107px;
+    z-index: -1;
+    position: absolute;
+    width: inherit;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 75%;
+    background-color: $color-primary-darkest;
+
+    &--text {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 180%;
+      /* or 32px */
+
+      text-align: center;
+      width: 75%;
+    }
+
+    &--icon {
+      width: 30%;
+      height: max-content;
+    }
   }
 }
