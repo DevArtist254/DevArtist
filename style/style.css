@@ -156,7 +156,8 @@ body {
       text-align: center;
       width: 36%;
       margin: 0 auto;
-      margin-top: 2rem; }
+      margin-top: 2rem;
+      margin-bottom: 8rem; }
     .work__desc--cards {
       margin-top: 4rem;
       display: flex;
@@ -183,13 +184,24 @@ body {
     z-index: -1;
     position: absolute;
     width: inherit; }
+    .card__heading--glow {
+      width: 80%;
+      /* margin: 0 auto; */
+      height: 8px;
+      background-color: transparent;
+      position: absolute;
+      top: 75px;
+      left: 29px;
+      box-shadow: 0px 4px 25px #08d9d6;
+      z-index: -1; }
   .card__content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 75%;
-    background-color: #171717; }
+    height: 85%;
+    background-color: #171717;
+    margin-top: 19%; }
     .card__content--text {
       font-family: "priFont", cursive;
       font-style: normal;
