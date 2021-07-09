@@ -36,17 +36,44 @@ html {
 body {
   background-color: #171717; }
 
+.btn {
+  border: none;
+  background-color: #5fdde5;
+  width: 19rem;
+  height: 6rem;
+  font-family: "Oswald", "priFont", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: lowercase;
+  border-radius: 5px;
+  color: #171a26; }
+  .btn:focus {
+    outline: none; }
+  .btn__shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(8px, 9px);
+    width: 19rem;
+    height: 6rem;
+    background-color: transparent;
+    border: 2px solid #5fdde5;
+    border-radius: 5px; }
+
 .nav {
   position: fixed;
   left: 58px;
   top: 34px;
-  width: 85vw;
+  width: 89vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   z-index: 20; }
   .nav__logo {
-    font-family: "terFont";
+    font-family: "Dancing Script", "terFont";
     font-size: 3.6rem; }
     .nav__logo--dark {
       color: #000000; }
@@ -70,7 +97,7 @@ body {
     right: 0;
     height: 100%; }
   .header__heading {
-    font-family: "priFont", cursive;
+    font-family: "Oswald", "priFont", cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 39px;
@@ -80,7 +107,7 @@ body {
     color: #ffffffff;
     width: 74%; }
   .header__quote {
-    font-family: "secFont", cursive;
+    font-family: "Zen Dots", "secFont", sans-serif;
     font-size: 18px;
     line-height: 23px;
     top: 90%;
@@ -107,12 +134,12 @@ body {
     padding-left: 5.7rem;
     color: #ffffffff; }
     .work__timeline--no {
-      font-family: "secFont", cursive;
+      font-family: "Zen Dots", "secFont", sans-serif;
       font-size: 7.2rem;
       line-height: 109.3%;
       letter-spacing: 0.3em; }
     .work__timeline--intro {
-      font-family: "priFont", cursive;
+      font-family: "Oswald", "priFont", cursive;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -140,7 +167,7 @@ body {
     margin-top: 4.5rem;
     color: #ffffffff; }
     .work__desc--header {
-      font-family: "priFont", cursive;
+      font-family: "Oswald", "priFont", cursive;
       font-style: normal;
       font-weight: normal;
       font-size: 5.4rem;
@@ -148,7 +175,7 @@ body {
       text-align: center;
       letter-spacing: 0.15em; }
     .work__desc--content {
-      font-family: "priFont", cursive;
+      font-family: "Oswald", "priFont", cursive;
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
@@ -169,11 +196,15 @@ body {
     .work__desc--card {
       width: 360px;
       min-height: 474px; }
+    .work__desc--btn {
+      width: 200px;
+      margin: 0 auto;
+      position: relative; }
 
 .card {
   position: relative; }
   .card__heading {
-    font-family: "priFont", cursive;
+    font-family: "Oswald", "priFont", cursive;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -203,7 +234,7 @@ body {
     background-color: #171717;
     margin-top: 19%; }
     .card__content--text {
-      font-family: "priFont", cursive;
+      font-family: "Oswald", "priFont", cursive;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
@@ -214,3 +245,59 @@ body {
     .card__content--icon {
       width: 30%;
       height: max-content; }
+
+.aboutWork {
+  color: #ffffffff;
+  margin-top: 8rem; }
+  .aboutWork__header {
+    position: relative;
+    width: max-content;
+    margin: 0 auto; }
+    .aboutWork__header--heading {
+      font-family: "Zen Dots", "secFont", sans-serif;
+      font-size: 7.2rem;
+      line-height: 109.3%;
+      letter-spacing: 0.15em; }
+    .aboutWork__header--shadow {
+      position: absolute;
+      width: 281.63px;
+      height: 46px;
+      z-index: -1;
+      bottom: -1px;
+      right: -84px;
+      background-color: #5fdde5; }
+  .aboutWork__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 89vw;
+    margin: 0 auto;
+    margin-top: 4rem; }
+  .aboutWork__content {
+    width: 40%; }
+    .aboutWork__content--heading {
+      font-family: "Oswald", "priFont", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 5.4rem;
+      line-height: 66px;
+      text-transform: capitalize; }
+    .aboutWork__content--text {
+      font-family: "Oswald", "priFont", cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px; }
+  .aboutWork__img {
+    margin-top: 4rem;
+    margin-left: 13rem; }
+
+.qn {
+  margin-top: 8rem;
+  width: 100vw;
+  min-height: 202.1rem;
+  padding: 12.4rem 7rem;
+  background-image: url("./img/qn.png"); }
+  .qn__featured {
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.87); }

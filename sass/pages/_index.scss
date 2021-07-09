@@ -145,6 +145,12 @@
       width: 360px;
       min-height: 474px;
     }
+
+    &--btn {
+      width: 200px;
+      margin: 0 auto;
+      position: relative;
+    }
   }
 }
 
@@ -201,5 +207,77 @@
       width: 30%;
       height: max-content;
     }
+  }
+}
+
+.aboutWork {
+  color: $color-white;
+  margin-top: 8rem;
+
+  &__header {
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+
+    &--heading {
+      font-family: $font-fam-sec;
+      font-size: $font-big;
+      line-height: 109.3%;
+      letter-spacing: 0.15em;
+    }
+    &--shadow {
+      position: absolute;
+      width: 281.63px;
+      height: 46px;
+      z-index: -1;
+      bottom: -1px;
+      right: -84px;
+      background-color: $color-primary-neon;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 89vw;
+    margin: 0 auto;
+    margin-top: 4rem;
+  }
+
+  &__content {
+    width: 40%;
+    &--heading {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font-meduim;
+      line-height: 66px;
+      text-transform: capitalize;
+    }
+    &--text {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+    }
+  }
+  &__img {
+    margin-top: 4rem;
+    margin-left: 13rem;
+  }
+}
+
+.qn {
+  margin-top: 8rem;
+  width: 100vw;
+  min-height: 202.1rem;
+  padding: 12.4rem 7rem;
+  background-image: url("./img/qn.png");
+
+  &__featured {
+    width: 100%;
+    background-color: rgba(23, 23, 23, 0.87);
   }
 }

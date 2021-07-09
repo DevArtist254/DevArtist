@@ -1,0 +1,32 @@
+.btn {
+  border: none;
+  background-color: $color-primary-neon;
+  width: 19rem;
+  height: 6rem;
+  font-family: $font-fam-pri;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: lowercase;
+  border-radius: 5px;
+
+  color: #171a26;
+
+  &:focus {
+    outline: none;
+  }
+
+  &__shadow {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: translate(8px, 9px);
+    width: 19rem;
+    height: 6rem;
+    background-color: transparent;
+    border: 2px solid #5fdde5;
+    border-radius: 5px;
+  }
+}
