@@ -300,4 +300,47 @@ body {
   background-image: url("./img/qn.png"); }
   .qn__featured {
     width: 100%;
-    background-color: rgba(23, 23, 23, 0.87); }
+    height: 1800px;
+    background-color: rgba(23, 23, 23, 0.87);
+    padding: 10.2rem 9rem; }
+
+.featured__header {
+  margin-bottom: 4rem; }
+  .featured__header--heading {
+    font-family: "Zen Dots", "secFont", sans-serif;
+    font-size: 7.2rem;
+    line-height: 109.3%;
+    letter-spacing: 0.15em;
+    color: #ffffffff;
+    text-align: center; }
+
+.featured__content {
+  color: #ffffffff;
+  width: 100%; }
+  .featured__content--header {
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ffffffff; }
+  .featured__content--heading {
+    font-family: "Oswald", "priFont", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5.4rem;
+    line-height: 66px;
+    text-transform: capitalize; }
+  .featured__content--body {
+    padding-left: 30em; }
+  .featured__content--btn {
+    background-color: transparent;
+    border: none; }
+    .featured__content--btn:focus {
+      outline: none; }
+  .featured__content--text {
+    font-family: "Oswald", "priFont", cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 2.4rem; }
