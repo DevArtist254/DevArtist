@@ -340,3 +340,121 @@
     }
   }
 }
+
+.contact-me {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: $color-white;
+
+  &__header {
+    width: 72%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    &--btn {
+      width: 45%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &--priBtn,
+    &--secBtn {
+      background-color: transparent;
+      border: none;
+      position: relative;
+      width: 19rem;
+      height: 6rem;
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      text-transform: lowercase;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &--priBtn {
+      background-color: $color-primary-neon;
+    }
+    &--secBtn {
+      background-color: $color-white;
+    }
+
+    &--link {
+      &:link,
+      &:visited {
+        color: #171a26;
+        text-decoration: none;
+      }
+    }
+
+    &--ls {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transform: translate(8px, 9px);
+      width: 19rem;
+      height: 6rem;
+      background-color: transparent;
+      border-radius: 5px;
+      z-index: -1;
+    }
+    &--quote {
+      font-family: $font-fam-pri;
+      font-style: normal;
+      font-weight: normal;
+      font-size: $font-meduim;
+      line-height: 66px;
+      text-transform: capitalize;
+    }
+
+    &--title {
+      font-family: $font-fam-sec;
+      font-size: $font-big;
+      line-height: 109.3%;
+      letter-spacing: 0.15em;
+    }
+  }
+
+  &__nav {
+    width: 89%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid $color-white;
+
+    &--heading {
+      font-family: $font-fam-ter;
+      font-size: $font-smaller;
+    }
+    &--dark {
+      color: $color-dark;
+    }
+    &--light {
+      color: $color-white;
+    }
+
+    &--list {
+      width: 20%;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}
